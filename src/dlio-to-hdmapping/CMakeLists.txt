@@ -15,6 +15,8 @@ find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 # LASzip library
 add_subdirectory(src/3rdparty/LASzip)
 include_directories(src/3rdparty/LASzip/include)
+include_directories(src/3rdparty/LASzip/include/laszip)
+include_directories(src/3rdparty/LASzip/dll)
 
 include_directories(
   ${PCL_INCLUDE_DIRS}

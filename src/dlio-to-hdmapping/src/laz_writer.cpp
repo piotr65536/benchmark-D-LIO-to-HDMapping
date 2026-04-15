@@ -1,5 +1,5 @@
 #include "laz_writer.hpp"
-#include <laszip/laszip_api.h>
+#include "laszip_api.h"
 #include <iostream>
 #include <limits>
 

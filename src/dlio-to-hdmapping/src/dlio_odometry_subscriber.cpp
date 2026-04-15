@@ -10,7 +10,7 @@
 #include <pcl/PCLPointCloud2.h>
 
 #include <Eigen/Dense>
-#include <laszip/laszip_api.h>
+#include "laszip_api.h"
 #include <nlohmann/json.hpp>
 
 #include <fstream>
