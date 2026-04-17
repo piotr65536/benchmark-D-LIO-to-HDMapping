@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_NAME='D-LIO_humble'
+IMAGE_NAME='d-lio_humble'
 TMUX_SESSION='ros2_D-LIO'
 
 DATASET_CONTAINER_PATH='/ros2_ws/dataset/input.bag'
