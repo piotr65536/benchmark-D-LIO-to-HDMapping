@@ -11,25 +11,25 @@ It should be located in '~/hdmapping-benchmark/data'.
 ```shell
 mkdir -p ~/hdmapping-benchmark
 cd ~/hdmapping-benchmark
-git clone https://github.com/MapsHD/benchmark-DLIO-to-HDMapping.git --recursive
-cd benchmark-DLIO-to-HDMapping
+git clone https://github.com/MapsHD/benchmark-D-LIO-to-HDMapping.git --recursive
+cd benchmark-D-LIO-to-HDMapping
 git checkout Bunker-DVI-Dataset-reg-1
-docker build -t dlio_humble .
+docker build -t d-lio_humble .
 ```
 
 ## Step 3 (run docker, file 'reg-1.bag-pc.bag' should be in '~/hdmapping-benchmark/data')
 ```shell
-cd ~/hdmapping-benchmark/benchmark-DLIO-to-HDMapping
+cd ~/hdmapping-benchmark/benchmark-D-LIO-to-HDMapping
 chmod +x docker_session_run-ros2-dlio.sh
 cd ~/hdmapping-benchmark/data
-~/hdmapping-benchmark/benchmark-DLIO-to-HDMapping/docker_session_run-ros2-dlio.sh reg-1.bag-pc.bag .
+~/hdmapping-benchmark/benchmark-D-LIO-to-HDMapping/docker_session_run-ros2-dlio.sh reg-1.bag-pc.bag .
 ```
 
 ## Step 4 (Open and visualize data)
-Expected data should appear in ~/hdmapping-benchmark/data/output_hdmapping-dlio
-Use tool [multi_view_tls_registration_step_2](https://github.com/MapsHD/HDMapping) to open session.json from ~/hdmapping-benchmark/data/output_hdmapping-dlio.
+Expected data should appear in ~/hdmapping-benchmark/data/output_hdmapping-D-LIO
+Use tool [multi_view_tls_registration_step_2](https://github.com/MapsHD/HDMapping) to open session.json from ~/hdmapping-benchmark/data/output_hdmapping-D-LIO.
 
-You should see following data in folder '~/hdmapping-benchmark/data/output_hdmapping-dlio'
+You should see following data in folder '~/hdmapping-benchmark/data/output_hdmapping-D-LIO'
 
 lio_initial_poses.reg
 
